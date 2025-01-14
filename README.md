@@ -22,7 +22,7 @@ users are provided a clean and easy to navigate UI at hand.
  > Feel free to fork this repository, open issues, and submit pull requests
 
 # License
- > This project is licensed under The Valley License. See the [LICENSE](./The%20Valley%20License.txt) file for details.
+ > This project is licensed under The Valley License. See the [LICENSE](./The%20Valley%20License.md) file for details.
 
 # Contact
  > If you have any questions, feel free to reach out at kingaga009@example.com.
