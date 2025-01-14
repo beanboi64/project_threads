@@ -13,10 +13,11 @@
 apart from it's redesign Project Threads brings a very unique and different user experience,
 users are provided a clean and easy to navigate UI at hand.
 
-# Technologies Used
- > Html
- > Css
- > Javascript
+## Technologies Used
+
+ ![HTML5](https://img.shields.io/badge/HTML5-5-orange)
+ ![CSS3](https://img.shields.io/badge/CSS3-3-blue)
+ ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 
 # Contributing
  > Feel free to fork this repository, open issues, and submit pull requests
