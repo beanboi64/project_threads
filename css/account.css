@@ -1,0 +1,108 @@
+.account-section {
+    display: flex;
+    padding: 0 20px;
+    width: 70ch;
+    height: 100%;
+}.profile-dashboard {
+    background: rgb(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    width: 68ch;
+    height: 100%;
+    padding: 20px 15px;
+    font-family: 'Excon', sans-serif;
+}.profile-id {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}.profile-id h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: -20px;
+}.profile-id h3 {
+    font-size: 18px;
+}.profile-name {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20px;
+}.profile-image-edit img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}.stats-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -10px;
+    margin-left: -40px;
+}.thread-stats ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 15px;
+}.thread-stats ul {
+    list-style: none;
+}.stats-icons ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}.stats-icons ul {
+    list-style: none;
+}.stats-icons ul li i {
+    font-size: 23px;
+}.profile-edit-button .edit-btn {
+    background: transparent;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.6s linear;
+    width: 100%;
+    overflow: auto;
+    cursor: pointer;/* No code was selected, so a new CSS class will be created to improve the existing code */
+    padding: 0;
+    margin: 0;
+}.edit-btn:hover p {
+    animation: editEffect 1s ease forwards;
+}@keyframes editEffect {
+    0% {
+    transform: translateY(0); 
+    }
+    30% {
+    transform: translateY(15px); 
+    }
+    50% {
+    transform: translateY(-10px); 
+    }
+    70% {
+    transform: translateY(5px);
+    }
+    100% {
+    transform: translateY(0);
+    }
+}.posts-header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}.posts-header ul li {
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}.active-bottom {
+    border-bottom: 1px solid #000;
+}/*#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}*/

@@ -1,0 +1,691 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+body {
+  background: #fff;
+  overflow: hidden;
+  transition: background-color 0.5s, color 0.5s;
+  padding: 15px 10px;
+}.active{
+  color: #000;
+}.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 10px;
+  z-index: 2;
+}.content-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+  position: relative;
+  z-index: 2;
+}.nav-header {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 0px 15px;
+  margin-left: -10px;
+  margin-bottom: 10px;
+  background: rgb(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  max-width: 400px;
+}.profile-links ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}.profile-links ul {
+  list-style: none;
+  align-items: center;
+  padding: 0px 0;
+}.profile-links ul li {
+  font-family: 'Excon', sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  transition: 0.2s ease;
+}.profile-links ul li:hover {
+  transform: scale(1.3);
+  transition: 0.2s ease;
+}.active {
+  opacity: 0.7;
+}.profile-links span i {
+  text-decoration: none;
+  font-size: 30px;
+}#threads i {
+  font-size: 54px;
+  background: linear-gradient(to right, #f58529, #dd2a7b, #8134af, #515bd4);
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 1;
+}.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+}.network-heading {
+  font-family: 'Excon', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: -5px;
+}.trending-container .network-heading {
+  font-family: 'Excon', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: -5px;
+}.profile-stats {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 0px;
+  padding: 10px 8px;
+  margin-bottom: -20px;
+  background: rgb(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  width: 36ch;
+}.profile-stats ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  margin-left: -30px;
+  gap: 5px;
+}.profile-stats ul li {
+  font-family: 'Excon', sans-serif;
+  font-size: 12px;
+}#mythreads {
+  font-weight: 600;
+}#myfollowers {
+  font-weight: 600;
+}#myfollowing {
+  font-weight: 600;
+}.pfp-image img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0;
+}.pfp-image1 img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0;
+}.recommendations {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 8px;
+  margin-left: -12px;
+  gap: 15px;
+  background: rgb(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  width: 46ch;
+  height: 32.5ch;
+  overflow: auto;
+}/*.recommendations .account-suggested:nth-child(9) {
+  margin-bottom: -80px;
+}*/.recommendations hr {
+  border: 0px solid #000;
+  margin: -5px 0;
+}#ignore-this {
+  margin-bottom: -10px;
+}.account-suggested {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}.trending-container .profile-info ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  margin-left: -30px;
+  gap: 5px;
+}.trending-container .profile-info ul li {
+  font-family: 'Excon', sans-serif;
+  font-size: 13px;
+}#threads {
+  font-weight: 600;
+  font-size: 12px;
+}#followers {
+  font-weight: 600;
+  font-size: 12px;
+}#following {
+  font-weight: 600;
+  font-size: 12px;
+}.profile-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: -5px;
+}.profile-info h2 {
+  font-family: 'Excon', sans-serif;
+  font-size: 16px;
+  padding-left: 10px;
+  margin-bottom: -15px;
+}.main-section {
+  display: flex;
+  flex-direction: column;
+  height: 100ch;
+  overflow-y: auto;
+}.notification-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px 20px;
+  width: 70ch;
+  height: 100ch;
+  overflow-y: auto;
+}.account-section {
+  display: flex;
+  padding: 0 20px;
+  width: 70ch;
+  height: 100%;
+}.threads {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  gap: 15px;
+  max-height: 100%;
+}.follow-them button {
+  background: #000;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  transition: 0.6s linear;
+}.follow-them button:hover {
+  transform: scale(1.2);
+  transition: 0.6s linear;
+  cursor: pointer;
+}.account-bio {
+  margin-top: -10px;
+}.account-bio p {
+  margin-left: 10px;
+}#user-threads, #user-followers, #user-following {
+  font-weight: 600;
+}#mythreads-thread, #myfollowers-thread, #myfollowing-thread  {
+  font-weight: 600;
+}.users-threads {
+  background: rgb(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  width: 67ch;
+  padding: 20px 20px;
+  cursor: pointer;
+}.users-threads .pfp-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}.users-threads .pfp-image .username img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}.pfp-image .username {
+  display: flex;
+  gap: 10px;
+}.username h2 {
+  font-family: 'Excon', sans-serif;
+  font-size: 20px;
+  color: #000;
+}.username h3 {
+  color: #000;
+}.interactions {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}.interactions ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Excon', sans-serif;
+  font-size: 12px;
+  list-style: none;
+  margin-top: -15px;
+  gap: 15px;
+}.interactions ul li i {
+  font-size: 22px;
+}.thread-post {
+  font-family: 'Excon', sans-serif;
+  font-size: 17px;
+  cursor: auto;
+  margin-top: -10px;
+}.date-area {
+  margin-top: -10px;
+}.trending {
+  background: rgb(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  width: 26.5ch;
+  height: 35ch;
+  padding: 10px 15px;
+  font-family: 'Excon', sans-serif;
+  overflow: auto;
+}.trending {
+  display: flex;
+  flex-direction: column;
+}.trending hr {
+  padding: 0;
+  margin: 10px 0;
+}.trending-news {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}.trending-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}.sports-trending {
+  font-size: 14px;
+}.title-trending {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1E90FF;
+}.title-trending i {
+  font-size: 18px;
+}.total-trending {
+  font-size: 14px;
+}.icon {
+  position: absolute;
+  font-size: 30px;
+  animation: fall 3s infinite linear;
+  z-index: 0;
+}@keyframes fall {
+  0% { top: -50px; opacity: 1; }
+  100% { top: 100vh; opacity: 0; }
+}.theme-switch {
+  display: inline-flex;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 40px;
+  z-index: 2;
+}#hide-switch {
+  display: none;
+}.profile-dashboard {
+  background: rgb(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  width: 68ch;
+  height: 100%;
+  padding: 20px 15px;
+  font-family: 'Excon', sans-serif;
+}.profile-id {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}.profile-id h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: -20px;
+}.profile-id h3 {
+  font-size: 18px;
+}.profile-name {
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+}.profile-image-edit img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+}.stats-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -10px;
+  margin-left: -40px;
+}.thread-stats ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 15px;
+}.thread-stats ul {
+  list-style: none;
+}.stats-icons ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}.stats-icons ul {
+  list-style: none;
+}.stats-icons ul li i {
+  font-size: 23px;
+}.profile-edit-button .edit-btn {
+  background: transparent;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.6s linear;
+  width: 100%;
+  overflow: auto;
+  cursor: pointer;/* No code was selected, so a new CSS class will be created to improve the existing code */
+  padding: 0;
+  margin: 0;
+}.edit-btn:hover p {
+  animation: editEffect 1s ease forwards;
+}@keyframes editEffect {
+  0% {
+    transform: translateY(0); 
+  }
+  30% {
+    transform: translateY(15px); 
+  }
+  50% {
+    transform: translateY(-10px); 
+  }
+  70% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}.posts-header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+}.posts-header ul li {
+  padding: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}.active-bottom {
+  border-bottom: 1px solid #000;
+}.post-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  height: 28ch;
+  overflow: auto;
+  margin-bottom: -60px;
+}.post-container hr {
+  border: 1px solid #000;
+  margin: 10px 0;
+  width: 100%;
+}.user-post {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}.post-interactions {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}.post-interactions ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Excon', sans-serif;
+  font-size: 15px;
+  list-style: none;
+  margin-top: -15px;
+  gap: 15px;
+}.post-interactions ul li i {
+  font-size: 16px;
+}.pfp-post-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0;
+}.pfp-post-image h3 {
+  font-size: 15px;
+}.pfp-post-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}.pfp-post-image .username {
+  display: flex;
+  gap: 10px;
+}.hidden-create-post {
+  display: none;
+}/*#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}*/.center-this-content {
+  display: flex;
+  justify-content: center;
+  font-family: 'Excon', sans-serif;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  z-index: 4;
+}.overlay-content { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  padding: 20px 40px;
+  width: 500px;
+  margin: 0;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}.overlay-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -20px;
+  margin-bottom: 20px;
+}.overlay-header h3 {
+  margin: 0;
+  color: white;
+}.overlay-cancel {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 16px;
+  cursor: pointer;
+}.overlay-cancel:hover {
+  color: white;
+}.overlay-options i {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}.overlay-body {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: -20px;
+}.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}.user-info img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}.username {
+  font-weight: bold;
+  color: #fff;
+}.overlay-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: -20px;
+}.post-btn {
+  background-color: #444;
+  border: none;
+  color: #888;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: not-allowed;
+}#content {
+  display: flex;
+  justify-content: center;
+}#message.hidden {
+  display: none;
+}.mobile-view {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
+  .profile-section,
+  .content-section {
+    display: none; 
+  }
+  .mobile-view {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    background: #000;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  .view-text {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 80px;
+    margin: 0;
+  }
+  .view-text h1 {
+    font-family: "Lobster", sans-serif;
+    font-size: 50px;
+    color: #ff6600;
+  }
+  .view-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin-top: -20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    overflow: hidden;
+  }
+  .mobile-view {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .view-text h1 {
+    font-size: 50px;
+  }
+  .view-text p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+  .mobile-view {
+    position: fixed;
+    top: -10%;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .view-text h1 {
+    font-size: 50px;
+  }
+  .view-text p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    background: #fff;
+  }
+  .profile-section,
+  .content-section {
+    display: none; /* Ensure desktop sections are hidden */
+  }
+  .mobile-view {
+    position: fixed;
+    top: -10%;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .view-text h1 {
+    font-size: 50px;
+  }
+  .view-text p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  body {
+    background: #fff;
+  }
+  .profile-section,
+  .content-section {
+    display: none; /* Ensure desktop sections are hidden */
+  }
+  .mobile-view {
+    position: fixed;
+    top: -10%;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .view-text h1 {
+    font-size: 50px;
+  }
+  .view-text p {
+    font-size: 16px;
+  }
+}

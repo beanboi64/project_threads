@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="icon" href="./icon_logo/threadsicon5.jpeg" type="image/jpeg">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/notifications.css" rel="stylesheet" type="text/css">
+    <link href="https://api.fontshare.com/v2/css?f[]=britney@400&f[]=melodrama@300,500&f[]=cabinet-grotesk@200&f[]=alpino@100&f[]=excon@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="profile-section">
+            <div class="theme-switch">
+                <div id="switched-theme">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+                <div id="hide-switch">
+                    <i class="fa-regular fa-lightbulb"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="profile">
+                <div class="profile-stats">
+                    <div class="pfp-image">
+                        <img src="./img/profile-img/pfp3.jpeg" alt="pfp">
+                    </div>
+                    <div class="profile-info">
+                        <h2><span id="profile-username">@krissattack0</span></h2>
+                        <ul>
+                            <li><span id="mythreads">0</span> Threads</li>
+                            <li><span id="myfollowers">0</span> Followers</li>
+                            <li><span id="myfollowing">0</span> Following</li>
+                        </ul>
+                    </div>
+                </div>
+                <h1 class="network-heading">What's Popular Right Now?</h1>
+                <div class="trending">
+                    <div class="trending-news">
+                        <span id="category-news" class="sports-trending">Sports</span>
+                        <span id="trending-title" class="title-trending"><i
+                                class="fa-brands fa-threads"></i>ManchesterUnited</span>
+                        <span id="total-posts" class="total-trending">1.4B Threads</span>
+                    </div>
+                    <hr>
+                    <div class="trending-news">
+                        <span id="category-news" class="sports-trending">People</span>
+                        <span id="trending-title" class="title-trending"><i
+                                class="fa-brands fa-threads"></i>ChristianDiddy</span>
+                        <span id="total-posts" class="total-trending">2.8B Threads</span>
+                    </div>
+                    <hr>
+                    <div class="trending-news">
+                        <span id="category-news" class="sports-trending">Health & Wellness</span>
+                        <span id="trending-title" class="title-trending"><i
+                                class="fa-brands fa-threads"></i>HealthyMindset</span>
+                        <span id="total-posts" class="total-trending">900k Threads</span>
+                    </div>
+                    <hr>
+                    <div class="trending-news">
+                        <span id="category-news" class="sports-trending">Gaming</span>
+                        <span id="trending-title" class="title-trending"><i
+                                class="fa-brands fa-threads"></i>CallOfDuty</span>
+                        <span id="total-posts" class="total-trending">1.7M Threads</span>
+                    </div>
+                    <hr>
+                    <div class="trending-news">
+                        <span id="category-news" class="sports-trending">Music & Entertainment</span>
+                        <span id="trending-title" class="title-trending"><i
+                                class="fa-brands fa-threads"></i>SoundtrackOfLife</span>
+                        <span id="total-posts" class="total-trending">1.4M Threads</span>
+                    </div>
+                    <hr>
+                    <div class="trending-news">
+                        <span id="category-news" class="sports-trending">Beauty & Skincare</span>
+                        <span id="trending-title" class="title-trending"><i
+                                class="fa-brands fa-threads"></i>GlowUpGoals</span>
+                        <span id="total-posts" class="total-trending">1.9M Threads</span>
+                    </div>
+                    <hr>
+                    <div class="trending-news">
+                        <span id="category-news" class="sports-trending">Lifestyle</span>
+                        <span id="trending-title" class="title-trending"><i
+                                class="fa-brands fa-threads"></i>SelfCareMatters</span>
+                        <span id="total-posts" class="total-trending">1.2M Threads</span>
+                    </div>
+                    <hr>
+                    <div class="trending-news">
+                        <span id="category-news" class="sports-trending">Social Experiment</span>
+                        <span id="trending-title" class="title-trending"><i
+                                class="fa-brands fa-threads"></i>Gwababa</span>
+                        <span id="total-posts" class="total-trending">900k Threads</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notification-section">
+                <div class="notification-panel">
+                    <div class="account-detail" style="display: none;">
+                        <div class="top-info">
+                            <div id="profile-image" class="pfp-image">
+                                <img src="./img/searched-img/pfp2.jpeg" alt="pfp">
+                            </div>
+                            <div class="account-following">
+                                <h2>@<span id="username3">Threads User</span> <span id="time-followed">1d</span></h2>
+                                <p>Followed you</p>
+                            </div>
+                            <div class="follow-them">
+                                <button id="follow-btn" class="follow-btn">Follow</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="overlay" class="hidden-create-post">
+                    <div class="center-this-content">
+                        <div class="overlay-content">
+                            <div class="overlay-header">
+                                <button id="cancel" class="overlay-cancel">Cancel</button>
+                                <h3>New thread</h3>
+                                <button class="overlay-options">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                            <div class="overlay-body">
+                                <div class="user-info">
+                                    <img src="./img/thread-post-img/pfp3.jpeg" alt="pfp">
+                                    <span id="profile-username-tag" class="username">krissattack0</span>
+                                </div>
+                                <textarea id="thread-post-by" placeholder="What's new?" class="input-text"></textarea>
+                            </div>
+                            <div class="overlay-footer">
+                                <span>Anyone can reply & quote</span>
+                                <button class="post-btn" disabled>Post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="trending-container">
+                <div class="nav-header">
+                    <div class="profile-links">
+                        <ul>
+                            <li><span id="homepage"><i class="fa-solid fa-house"></i></span></li>
+                            <li><span id="search"><i class="active fa-solid fa-magnifying-glass"></i></span></li>
+                            <li><span id="post"><i class="fa-solid fa-plus"></i></span></li>
+                            <li><span id="notification"><i class="fa-solid fa-heart"></i></span></li>
+                            <li><span id="myaccount"><i class="fa-solid fa-user"></i></span></li>
+                            <span id="threads"><i class="fa-brands fa-threads"></i></span>
+                        </ul>
+                    </div>
+                </div>
+
+                <h1 class="network-heading">Expand Your Network!</h1>
+                <div class="recommendations">
+                    <div class="account-suggested">
+                        <div id="profile-image" class="pfp-image1">
+                            <img src="./img/recommendation-img/pfp2.jpeg" alt="pfp">
+                        </div>
+                        <div class="profile-info">
+                            <h2>@<span id="username">Threads User</span></h2>
+                            <ul>
+                                <li><span id="threads">0</span> Threads</li>
+                                <li><span id="followers">0</span> Followers</li>
+                                <li><span id="following">0</span> Following</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="account-suggested">
+                        <div class="pfp-image1">
+                            <img src="./img/recommendation-img/pfp2.jpeg" alt="pfp">
+                        </div>
+                        <div class="profile-info">
+                            <h2>@<span id="username">Threads User</span></h2>
+                            <ul>
+                                <li><span id="threads">0</span> Threads</li>
+                                <li><span id="followers">0</span> Followers</li>
+                                <li><span id="following">0</span> Following</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="account-suggested">
+                        <div class="pfp-image1">
+                            <img src="./img/recommendation-img/pfp2.jpeg" alt="pfp">
+                        </div>
+                        <div class="profile-info">
+                            <h2>@<span id="username">Threads User</span></h2>
+                            <ul>
+                                <li><span id="threads">0</span> Threads</li>
+                                <li><span id="followers">0</span> Followers</li>
+                                <li><span id="following">0</span> Following</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="account-suggested">
+                        <div class="pfp-image1">
+                            <img src="./img/recommendation-img/pfp2.jpeg" alt="pfp">
+                        </div>
+                        <div class="profile-info">
+                            <h2>@<span id="username">Threads User</span></h2>
+                            <ul>
+                                <li><span id="threads">0</span> Threads</li>
+                                <li><span id="followers">0</span> Followers</li>
+                                <li><span id="following">0</span> Following</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="account-suggested">
+                        <div class="pfp-image1">
+                            <img src="./img/recommendation-img/pfp2.jpeg" alt="pfp">
+                        </div>
+                        <div class="profile-info">
+                            <h2>@<span id="username">Threads User</span></h2>
+                            <ul>
+                                <li><span id="threads">0</span> Threads</li>
+                                <li><span id="followers">0</span> Followers</li>
+                                <li><span id="following">0</span> Following</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="account-suggested">
+                        <div class="pfp-image1">
+                            <img src="./img/recommendation-img/pfp2.jpeg" alt="pfp">
+                        </div>
+                        <div class="profile-info">
+                            <h2>@<span id="username">Threads User</span></h2>
+                            <ul>
+                                <li><span id="threads">0</span> Threads</li>
+                                <li><span id="followers">0</span> Followers</li>
+                                <li><span id="following">0</span> Following</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="account-suggested">
+                        <div class="pfp-image1">
+                            <img src="./img/recommendation-img/pfp2.jpeg" alt="pfp">
+                        </div>
+                        <div class="profile-info">
+                            <h2>@<span id="username">Threads User</span></h2>
+                            <ul>
+                                <li><span id="threads">0</span> Threads</li>
+                                <li><span id="followers">0</span> Followers</li>
+                                <li><span id="following">0</span> Following</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="account-suggested">
+                        <div class="pfp-image1">
+                            <img src="./img/recommendation-img/pfp2.jpeg" alt="pfp">
+                        </div>
+                        <div class="profile-info">
+                            <h2>@<span id="username">Threads User</span></h2>
+                            <ul>
+                                <li><span id="threads">0</span> Threads</li>
+                                <li><span id="followers">0</span> Followers</li>
+                                <li><span id="following">0</span> Following</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="ignore-this" class="account-suggested">
+                        <div class="pfp-image1">
+                            <img src="./img/recommendation-img/pfp2.jpeg" alt="pfp">
+                        </div>
+                        <div class="profile-info">
+                            <h2>@<span id="username">Threads User</span></h2>
+                            <ul>
+                                <li><span id="threads">0</span> Threads</li>
+                                <li><span id="followers">0</span> Followers</li>
+                                <li><span id="following">0</span> Following</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <section class="mobile-view">
+        <div class="view-text">
+            <h1>The Valley</h1>
+            <p>We've detected that you're using an unsupported device. Please try switching to a device with a larger screen, such as a tablet, laptop, or TV.</p>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/8fe730ec7d.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
